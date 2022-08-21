@@ -2,7 +2,7 @@
 Assignment 2 158258
 
 This is a group assignment for Massey University 'Sheepy Farms Consult'. The assignment is to create several webpages for our client 
-'Sheepy Farms Consult' baed on the bref:
+'Sheepy Farms Consult' based on the brief:
 
 
 Sheepy Farm Consult:
