@@ -57,6 +57,7 @@ body header img {
 nav.horizontal {
    background-color: rgb(228, 237, 228);
    min-height: 2em;
+   max-height: 125px;
    display:flex;
    justify-content: space-around;
    align-items: center;
@@ -161,6 +162,7 @@ ul.mainmenu > li {
 
 .sheepy-icon {
     height: 200px;
+    padding-top: 10px;
 }
 
 
