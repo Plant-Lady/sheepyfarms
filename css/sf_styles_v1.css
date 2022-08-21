@@ -160,19 +160,27 @@ ul.mainmenu > li {
 
 
 .sheep1-img {
-    max-height: 100%;
+    max-height: 50%;
+    max-width: 25%;
+    padding-top: 20px;
 }
 
 /* Submenu Styles */
 
 ul.submenu {
-   width: 100%;
+   width: 150px;
    background-color: rgb(177, 179, 174);
    display: none;
+
+
 }
 
  a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
-    display:block;
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
  }
 
 /* Section Styles */
