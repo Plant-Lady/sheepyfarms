@@ -55,7 +55,7 @@ body header img {
 /* Horizonal Navigation Styles */
 
 nav.horizontal {
-   background-color: white;
+   background-color: rgb(228, 237, 228);
    min-height: 2em;
    display:flex;
    justify-content: space-around;
@@ -160,14 +160,14 @@ ul.mainmenu > li {
 
 
 .sheepy-icon {
-    height: 150px;
+    height: 200px;
 }
 
 
 .sheep1-img {
    float: left;
-   max-height: 50%;
-   max-width: 25%;
+   max-height: 100%;
+   max-width: 40%;
    padding-top: 20px;
    padding-left: 10px;
    padding-right: 10px;
