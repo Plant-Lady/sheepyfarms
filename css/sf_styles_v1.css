@@ -52,7 +52,7 @@ body header img {
 /* Horizonal Navigation Styles */
 
 nav.horizontal {
-   background-color: rgb(249, 250, 249);
+   background-color: white;
    min-height: 2em;
    display:flex;
    justify-content: space-around;
@@ -84,6 +84,7 @@ nav.horizontal a:visited, nav.horizontal a:link {
 nav.horizontal a:hover, nav.horizontal a:active {
    background-color: rgb(94, 95, 94);
    color: orange;
+   width: auto;
 }
 
 
@@ -145,7 +146,8 @@ ul.mainmenu {
 }
 
 ul.mainmenu > li {
-   text-indent: 15px;
+   padding-left: 5px;
+   padding-right: 5px;
 }
 
 /*ul.mainmenu > li:first-of-type a {
@@ -160,23 +162,26 @@ ul.mainmenu > li {
 
 
 .sheep1-img {
-    max-height: 50%;
+   float: left; 
+   max-height: 50%;
     max-width: 25%;
     padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Submenu Styles */
 
 ul.submenu {
-   width: 138px;
+   width: auto;
    background-color: rgb(177, 179, 174);
    display: none;
-
-
 }
 
  a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
-    display:flex;
+   padding-left: 10px;
+   padding-right: 10px; 
+   display:flex;
     position: relative;
     flex-direction: column;
     position: absolute;
