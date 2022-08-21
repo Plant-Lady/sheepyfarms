@@ -243,7 +243,30 @@ body > footer h1 {
     letter-spacing: 0.2em;
     margin: 1em 0 0.5em 1em;
  }
+/* Footer Styles */
 
+footer {
+    background-color: rgba(128, 128, 128, 0.986);
+    clear: left;
+    font-size: 0.7em;
+}
+
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+footer > nav.vertical {
+    float: left;
+    width: 22%;
+}
+
+footer > section#contactInfo {
+    float: left;
+    width: 25%;
+    
+}
 /* Pulldown Menu Styles */
 
 
