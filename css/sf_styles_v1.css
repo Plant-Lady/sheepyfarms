@@ -125,15 +125,16 @@ nav.vertical ul {
  */
  nav.vertical a:visited, 
  nav.vertical a:link {
-    color: rgb(31, 73, 125);
+    color: rgb(94, 95, 94);
  }
  
  nav.vertical a:hover, 
  nav.vertical a:active {
-    /*background-color: rgb(94, 95, 94);
-    color: orange;*/
+    /*background-color: rgb(94, 95, 94);*/
+    color:  rgb(249, 250, 249);
     text-decoration: underline;
  }
+ 
  
  
 /* Contact Info Styles */
@@ -226,23 +227,25 @@ aside {
 
 /* Footer Styles */
 
+
 body > footer {
    background-color: rgb(177, 179, 174);
   /* font-size: 0.9em;
    text-align: center;
    padding: 10px 0px;*/
-   font-size: 0.9em;
+   font-size: .8em;
    color:
    /* rgb(186, 186, 156);*/
    rgb(249, 250, 249);
 }
 body > footer h1 {
     background-color: rgb(177, 179, 174);
-    font-size: 1.1em;
+    font-size: .9em;
     font-weight: normal;
     letter-spacing: 0.2em;
     margin: 1em 0 0.5em 1em;
  }
+
 /* Footer Styles */
 
 footer {
