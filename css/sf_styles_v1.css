@@ -262,6 +262,14 @@ aside {
    align-items: center;
    text-indent: 2px;
  }
+div.row-about {
+    clear: both;
+}
+div.row-about::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* About Us end */
 
