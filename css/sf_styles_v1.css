@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /*
    
@@ -9,7 +10,6 @@
    
    This file contains the layout styles used in the sheepfarms consultants
    home page.
-
 */
 
 /* ===========
@@ -20,10 +20,12 @@
 
 /* HTML and Body Styles */
 * {
+   margin: 0;
+   padding: 0;
    box-sizing: border-box;
  }
- 
- 
+
+
 html {
    background: url(tf_back1.png) center center / cover no-repeat fixed;
    height: 100%;
@@ -32,19 +34,21 @@ html {
 }
 
 body {
-   background: rgb(134, 176, 232);   
+   background: rgb(134, 176, 232);
    box-shadow: rgb(51, 51, 51) 5px 0px 15px,
                rgb(51, 51, 51) -5px 0px 15px;
    margin: auto;
    min-height: 100%;
    min-width: 320px;
-   max-width: max-content;   
+   max-width: max-content;
+   line-height: 1.5;
+   font-family: 'Poppins', sans-serif;
 }
 
 /* Body Header Styles */
 
 body header {
-   background: rgb(134,176,232);   
+   background: rgb(134,176,232);
 }
 
 body header img {
@@ -61,7 +65,7 @@ nav.horizontal {
    display:flex;
    justify-content: space-around;
    align-items: center;
-  
+
 }
 
 
@@ -71,7 +75,7 @@ nav.horizontal li {
    display: inline-block;
    line-height: 2em;
    text-transform: uppercase;
-   
+
 }
 
 nav.horizontal a {
@@ -103,11 +107,11 @@ nav.vertical {
     align-items: center;
  }
  */
- 
+
 nav.vertical ul {
     margin-left: 1em;
     line-height: 2em;
-   
+
  }
 
  /*
@@ -123,26 +127,26 @@ nav.vertical ul {
     font-size: 1em;
  }
  */
- nav.vertical a:visited, 
+ nav.vertical a:visited,
  nav.vertical a:link {
     color: rgb(94, 95, 94);
  }
- 
- nav.vertical a:hover, 
+
+ nav.vertical a:hover,
  nav.vertical a:active {
     /*background-color: rgb(94, 95, 94);*/
     color:  rgb(249, 250, 249);
     text-decoration: underline;
  }
- 
- 
- 
+
+
+
 /* Contact Info Styles */
 
 section#contactInfo p {
     line-height: 1.4em;
     margin: 1em;
- }   
+ }
 
 /* Main Menu Styles */
 
@@ -186,7 +190,7 @@ ul.submenu {
 
  a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
    padding-left: 10px;
-   padding-right: 10px; 
+   padding-right: 10px;
    display:flex;
     position: relative;
     flex-direction: column;
@@ -228,47 +232,75 @@ aside {
 /* Footer Styles */
 
 
-body > footer {
-   background-color: rgb(177, 179, 174);
-  /* font-size: 0.9em;
-   text-align: center;
-   padding: 10px 0px;*/
-   font-size: .8em;
-   color:
-   /* rgb(186, 186, 156);*/
-   rgb(249, 250, 249);
+.container{
+    max-width:1 170px;
+    margin: auto;
 }
-body > footer h1 {
-    background-color: rgb(177, 179, 174);
-    font-size: .9em;
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    margin: 1em 0 0.5em 1em;
- }
-
-/* Footer Styles */
-
-footer {
-    background-color: rgba(128, 128, 128, 0.986);
-    clear: left;
-    font-size: 0.7em;
+.row{
+    display: flex;
+    flex-wrap: wrap;
 }
-
-footer::after {
-    clear: both;
-    content: "";
-    display: table;
+ul{
+    list-style: none;
 }
-
-footer > nav.vertical {
-    float: left;
-    width: 22%;
+.footer{
+    background-color: rgb(228, 237, 228);
+    padding: 70px 0;
 }
-
-footer > section#contactInfo {
-    float: left;
+.footer-col{
     width: 25%;
-    
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: rgb(94, 95, 94);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(94, 95, 94);
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(94, 95, 94);
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(94, 95, 94);
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
 }
 /* Pulldown Menu Styles */
 
@@ -287,14 +319,14 @@ footer > section#contactInfo {
 /* tablet styles 481px and greater*/
 
 @media only screen and (min-width: 481px) {
-    
+
 }
 
 
 /* desktop styles 769px and greater*/
 
 @media only screen and (min-width: 769px) {
-    
+
 }
 
 
@@ -308,27 +340,38 @@ footer > section#contactInfo {
    float: left;
    padding: 10px;
  }
- 
+
  /* Left and right column */
  .column.side {
    width: 20%;
  }
- 
+
  /* Middle column */
  .column.middle {
    width: 50%;
  }
- 
+
  /* Clear floats after the columns */
  .row:after {
    content: "";
    display: table;
    clear: both;
  }
- 
+
  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
  @media screen and (max-width: 600px) {
    .column.side, .column.middle {
      width: 100%;
    }
+}
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
 }
