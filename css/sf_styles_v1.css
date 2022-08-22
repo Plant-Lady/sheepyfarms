@@ -229,6 +229,42 @@ aside {
    background-color: rgb(181, 204, 136);
 }
 
+/* About Us */
+#about {
+    outline: 1px solid  rgb(94, 95, 94);
+}
+
+.about-img {
+    /* max-height: 100%;*/
+     float: left; 
+     max-height: 50%;
+      max-width: 25%;
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+ }
+
+ #header {
+    color: rgb(94, 95, 94);
+    font-size: 1.5em;
+    line-height: 2em;
+   text-transform: uppercase;
+   align-items: center;
+   text-indent: 2px;
+ }
+
+ .about_h2 {
+    color: rgb(94, 95, 94);
+    line-height: 3em;
+   
+   text-transform: uppercase;
+   align-items: center;
+   text-indent: 2px;
+ }
+
+/* About Us end */
+
 /* Footer Styles */
 
 
