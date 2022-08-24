@@ -28,7 +28,7 @@
 
 html {
    background: url(tf_back1.png) center center / cover no-repeat fixed;
-   height: 100%;
+   min-height: 100%;
    font-family: Verdana, Geneva, sans-serif;
    font-size: 12px;
 }
@@ -179,6 +179,22 @@ ul.mainmenu > li {
    padding-left: 10px;
    padding-right: 10px;
 }
+.sheep2-img {
+   float: right;
+   max-height: 100%;
+   max-width: 45%;
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.sheep3-img {
+   float: left;
+   max-height: 100%;
+   max-width: 40%;
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
 
 /* Submenu Styles */
 
@@ -192,10 +208,10 @@ ul.submenu {
    padding-left: 10px;
    padding-right: 10px;
    display:flex;
-    position: relative;
-    flex-direction: column;
-    position: absolute;
-    z-index: 1;
+   position: relative;
+   flex-direction: column;
+   position: absolute;
+   z-index: 1;
  }
 
 /* Section Styles */
@@ -237,7 +253,7 @@ aside {
 
 .about-img {
     /* max-height: 100%;*/
-     float: left; 
+     float: left;
      max-height: 50%;
       max-width: 25%;
       padding-top: 20px;
@@ -255,10 +271,10 @@ aside {
    text-indent: 2px;
  }
 
- .about_h2 { 
+ .about_h2 {
    color: rgb(94, 95, 94);
     line-height: 3em;
-   
+
    text-transform: uppercase;
    align-items: center;
    text-indent: 2px;
@@ -274,6 +290,7 @@ div.row-about::after {
 }
 
 /* About Us end */
+
 
 /* Footer Styles */
 
@@ -329,7 +346,7 @@ ul{
     transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-    color: #ffffff;
+    color: orange;
     padding-left: 8px;
 }
 .footer-col .social-links a{
@@ -348,6 +365,13 @@ ul{
     color: #24262b;
     background-color: #ffffff;
 }
+.footer .copyright {
+    color: rgb(94, 95, 94);
+    width: 100%;
+    line-height: 150px;
+    text-align: center;
+}
+
 /* Pulldown Menu Styles */
 
 
@@ -364,7 +388,7 @@ ul{
         height: 100px;
         margin-left: 10px;
         margin-top: 10px;
-       
+
     }
     .navbar .container-item {
         width: 100%;
@@ -377,20 +401,20 @@ ul{
 
     .about-img {
         /* max-height: 100%;*/
-         float: left; 
+         float: left;
          max-height: 50%;
           max-width: 50%;
           padding-top: 20px;
           padding-left: 10px;
           padding-right: 10px;
-         
+
      }
 
 
     .section {
-        
+
         font-size: small;
-      
+
     }
 }
 
@@ -422,11 +446,13 @@ ul{
  /* Left and right column */
  .column.side {
    width: 10%;
+   padding-bottom: 30px;
  }
 
  /* Middle column */
  .column.middle {
    width: 80%;
+   padding-bottom: 30px;
  }
 
  /* Clear floats after the columns */
@@ -457,20 +483,20 @@ ul{
 /* Achievements Formatting */
 
 .achieve-img1 {
-   float: left; 
+   float: left;
    max-height: 20%;
-    max-width: 20%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+   max-width: 20%;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
 }
 
 .achieve-img2 {
-   float: right; 
+   float: right;
    max-height: 20%;
-    max-width: 20%;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+   max-width: 20%;
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
 }
